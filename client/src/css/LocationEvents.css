@@ -1,39 +1,91 @@
 .location-events {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: no-wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.location-events-main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-events-main h2 {
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 24px;
+  color: #fff;
+  text-shadow: 0 2px 8px #222;
+}
+
+.location-events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.location-event-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.location-event-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  border-color: var(--primary-hover);
+}
+
+.location-events-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
 }
 
 .location-events header {
-    background-color: var(--main-color);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 10px;
+  background-color: var(--main-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
 }
 
 .location-image img {
-    width: 300px;
-    height: auto;
-    border: 1px solid white;
-    margin-left: 20px;
+  width: 300px;
+  height: auto;
+  border: 1px solid white;
+  margin-left: 20px;
 }
 
 .location-events header p {
-    color: white;
-    font-size: 0.8em;
-    margin-bottom: 0px;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 0px;
 }
 
 .location-events main {
-    text-align: center;
-    padding: 30px;
-    margin: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .location-events main i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
